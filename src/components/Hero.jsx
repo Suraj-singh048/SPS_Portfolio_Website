@@ -19,7 +19,7 @@ const Hero = () => {
                     <div className='mt-6 flex flex-col xs:flex-row xs:gap-4 md:flex-row gap-4'>
                         <a href="#data-analytics-projects">
                             <button className='w-[120px] xs:w-[130px] sm:w-[150px] h-[40px] xs:h-[45px] sm:h-[50px] text-white bg-primary/90 hover:bg-stone-200 hover:text-black hover:translate-y-2 duration-200 font-medium'>
-                                Explore My Work
+                                Work Samples
                             </button>
                         </a>
 
