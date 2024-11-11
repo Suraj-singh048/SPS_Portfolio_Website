@@ -3,25 +3,24 @@ import { FaCaretDown } from "react-icons/fa";
 
 const Menu = [
   { id: 1, name: "Home", link: "/#" },
-  { id: 2, name: "Projects", link: "/#projects" },
   { id: 3, name: "Skills", link: "/#skills" },
   { id: 4, name: "About Me", link: "/#about" },
   { id: 5, name: "Contact", link: "/#contact" },
 ];
 
 const DropdownLinks = [
-  { id: 1, name: "Featured Projects", link: "/#featured" },
-  { id: 2, name: "Recent Work", link: "/#recent" },
-  { id: 3, name: "Open Source", link: "/#opensource" },
+  { id: 1, name: "Data Analysis", link: "#data-analytics-projects" },
+  { id: 2, name: "Machine Learning and Deep learning", link: "#machine-learning-projects" },
+  { id: 3, name: "UI/UX and Design", link: "#ui-ux-projects" },
 ];
 
 const Navbar = () => {
   return (
-    <div className="shadow-md bg-primary duration-200 relative z-40">
+    <div className="shadow-md bg-primary duration-200 z-40 top-0 sticky backdrop-blur-xl ">
       <div className="flex justify-between items-center container mx-auto py-3 md:py-4">
         {/* Logo on the left */}
         <div className="flex items-center">
-          <span className="font-bold text-white text-xl md:text-2xl ml-2">CodeLens</span>
+          <span className="font-bold text-white text-xl md:text-2xl ml-2">Suraj Singh</span>
         </div>
 
         {/* Links and Contact Us button */}
@@ -47,12 +46,12 @@ const Navbar = () => {
                 </span>
               </a>
               <div className="absolute z-[9999] hidden group-hover:block w-[180px] md:w-[200px] rounded-md text-white p-2 shadow-md">
-                <ul>
+                <ul className="flex flex-col gap-1">
                   {DropdownLinks.map((data) => (
                     <li key={data.id}>
                       <a
                         href={data.link}
-                        className="inline-block w-full bg-slate-500 rounded-md p-2 text-sm hover:text-black hover:bg-gray-200"
+                        className="inline-block w-full bg-timber-green-800 rounded-md p-2 text-sm hover:bg-timber-green-700"
                       >
                         {data.name}
                       </a>
@@ -80,7 +79,7 @@ const Navbar = () => {
               href="/#contact"
               className="bg-white text-primary font-semibold text-sm py-2 px-4 rounded-full duration-200 hover:bg-primary hover:text-white"
             >
-              Contact Us
+              Contact Me
             </a>
           </div>
         </div>

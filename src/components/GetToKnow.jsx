@@ -13,18 +13,15 @@ const GetToKnow = () => {
                     </button>
                 </div>
                 <div className="mt-6 md:mt-0 text-center md:text-left">
-                    <h1 className="text-lg sm:text-xl text-gray-600">Explore My Skills</h1>
+                    <h1 className="text-lg sm:text-xl text-gray-600">Explore My Expertise</h1>
                     <p className="mt-4 sm:mt-5 w-[240px] sm:w-[280px] tracking-wide text-white text-sm sm:text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-                        repellendus exercitationem ducimus quas sequi illum reiciendis pariatur
-                        impedit veniam ipsam facere ipsa
-                        unde perspiciatis veritatis aut excepturi, possimus neque nulla.
+                        I bring a blend of data science, data analysis, and user-centered design to create impactful, data-driven solutions. My work leverages analytics and visualization to drive better decision-making and user experiences.
                     </p>
                 </div>
                 <div className="flex flex-col gap-3 md:gap-5 items-center md:items-start mt-6 md:mt-0">
-                    <h1 className="text-white text-sm sm:text-base">Responsive Design</h1>
-                    <h1 className="text-gray-500 text-sm sm:text-base">Mobile Development</h1>
-                    <h1 className="text-gray-600 text-sm sm:text-base">Web Development</h1>
+                    <h1 className="text-white text-sm sm:text-base">Data Analysis</h1>
+                    <h1 className="text-gray-500 text-sm sm:text-base">Machine Learning</h1>
+                    <h1 className="text-gray-600 text-sm sm:text-base">UI/UX Design</h1>
                 </div>
             </div>
 
