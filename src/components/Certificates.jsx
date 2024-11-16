@@ -152,9 +152,9 @@ function CertificateCategory({ id, title, certificates }) {
 const Certificates = () => {
   return (
     <section id="Certificates" className="w-full bg-timber-green-50 p-10">
-      <h1 className="text-5xl font-extrabold text-center mb-12 text-timber-green-900">My Certifications</h1>
+      <h1 className="text-5xl font-extrabold text-center mb-12 text-timber-green-900">Certifications</h1>
       <div className="space-y-16">
-        <CertificateCategory id="certifications" title="My Certifications" certificates={certificationsData} />
+        <CertificateCategory id="certifications" title="Professional Certificates:" certificates={certificationsData} />
       </div>
     </section>
   );
