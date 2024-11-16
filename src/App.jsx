@@ -5,12 +5,14 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Certificates from "./components/Certificates";
+import Experience from "./components/Experience";
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
       <Designing />
+      <Experience />
       <Skills />
       <Projects />
       <Certificates />
