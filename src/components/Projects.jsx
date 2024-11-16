@@ -18,8 +18,7 @@ const projectsData = {
       name: "Heart Disease Predictor", 
       description: "Machine learning model for predicting heart disease with high accuracy based on various health parameters.", 
       link: "https://github.com/Suraj-singh048/Heart-Disease-Predictor" 
-    }
-    ,
+    },
     { name: "Dog Breed Recognition", description: "A deep learning model that classifies dog breeds using CNN architecture.", link: "https://github.com/Suraj-singh048/Dog-Breed-Recognition-Using-Deep-Learning" },
   ],
   uiUxDesign: [
@@ -30,7 +29,7 @@ const projectsData = {
 // Project card component with refined styling
 function ProjectContainer({ project }) {
   return (
-    <div className="p-6 w-[450px] bg-white bg-opacity-90 border-timber-green-200 border rounded-xl shadow-xl flex-shrink-0 transition-transform transform hover:scale-105 hover:shadow-2xl hover:border-timber-green-400">
+    <div className="p-6 w-full sm:w-[350px] md:w-[450px] bg-white bg-opacity-90 border-timber-green-200 border rounded-xl shadow-xl flex-shrink-0 transition-transform transform hover:scale-105 hover:shadow-2xl hover:border-timber-green-400">
       <h3 className="text-2xl font-semibold text-timber-green-900 mb-2">{project.name}</h3>
       <p className="text-gray-700 mb-6">{project.description}</p>
       <div className="flex justify-center">
@@ -76,7 +75,7 @@ function ProjectCategory({ id, title, projects }) {
   };
 
   return (
-    <section id={id} className="relative w-full mb-16 p-8 bg-gray-900 bg-opacity-80 rounded-lg shadow-xl">
+    <section id={id} className="relative w-full mb-16 p-8 bg-timber-green-900 bg-opacity-80 rounded-lg shadow-xl">
       <h2 className="text-3xl font-semibold text-white mb-6">{title}</h2>
       {/* Left Arrow */}
       {showArrows && (
