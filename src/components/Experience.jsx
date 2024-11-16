@@ -41,6 +41,16 @@ const experienceData = [
       "Contributed to data mining, SQL, and Microsoft Excel-based analytics for enhanced business decision-making.",
     ],
   },
+  {
+    role: "Freelance Data Analyst",
+    company: "Self-Employed",
+    duration: "August 2023 – February 2024",
+    responsibilities: [
+      "Utilized Excel and SQL to manipulate and analyze large datasets, improving data processing efficiency by 20%.",
+      "Developed dynamic dashboards in Power BI, enabling stakeholders to visualize complex data and make informed decisions.",
+      "Automated reporting processes, reducing manual effort by 25% and streamlining overall workflow.",
+    ],
+  },
 ];
 
 function ExperienceCard({ experience }) {
