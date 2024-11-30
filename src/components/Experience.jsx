@@ -2,6 +2,17 @@ import React from "react";
 
 const experienceData = [
   {
+    "role": "Analyst Intern",
+    "company": "Uolo",
+    "duration": "December 2024 – Ongoing",
+    "responsibilities": [
+      "Onboarding and familiarization with Uolo's data analytics processes and tools.",
+      "Assisting in the initial stages of data collection and preparation for analytical tasks.",
+      "Building foundational knowledge of Uolo's scholastic programs and analytics workflows."
+    ]
+  },
+  
+  {
     role: "Research Intern",
     company: "NIT Kurukshetra",
     duration: "July 2024 – August 2024",

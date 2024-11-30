@@ -35,15 +35,37 @@ const skillsData = {
 
 const technicalRatings = {
   'Python': 4,
-  "SQL (MySQL, PostgreSQL)": 4,
-  "Machine Learning": 4,
-  "Data Visualization (Tableau, Power BI)": 4,
-  "Deep Learning (NLP, Computer Vision)": 3,
-  "TensorFlow & PyTorch": 4,
-  "Microsoft Excel": 4,
-  "UI/UX Design (Figma, Adobe XD)": 4,
-  "AWS (S3, EC2)": 2,
-}
+  'SQL': 4,
+  'MySQL': 4,
+  'PostgreSQL': 4,
+  'R Language': 3,
+  'Machine Learning': 4,
+  'Data Visualization': 5,
+  'Tableau': 4,
+  'Power BI': 4,
+  'Deep Learning': 3,
+  'NLP, CNN': 3,
+  'Computer Vision': 3,
+  'TensorFlow': 3,
+  'PyTorch': 3,
+  'Microsoft Excel': 5,
+  'UI/UX Design': 4,
+  'Figma': 4,
+  'Adobe XD': 3,
+  'AWS (S3, EC2)': 3
+};
+
+const nonTechnicalRatings = {
+  'Effective Communication': 5,
+  'Collaborative Teamwork': 5,
+  'Strategic Leadership': 4,
+  'Advanced Problem-Solving': 5,
+  'Human-Centered Design Thinking': 4,
+  'Comprehensive User Research': 4,
+  'Agile Project Management': 4,
+  'Data-Driven Decision Making': 5
+};
+
 
 function SkillContainer({ rating, children }) {
   const width = (rating / 5.0) * 100;
@@ -85,7 +107,7 @@ const Skills = () => {
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {
               skillsData.nonTechnical.map((skill, idx) => (
-                <SkillContainer key={idx} rating={4}>
+                <SkillContainer key={idx} rating={nonTechnicalRatings[skill]}>
                   {skill}
                 </SkillContainer>
               ))
