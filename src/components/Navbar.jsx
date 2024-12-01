@@ -6,6 +6,7 @@ const Menu = [
   { id: 3, name: "Skills", link: "/#skills" },
   { id: 4, name: "About Me", link: "/#about" },
   { id: 5, name: "Contact", link: "/#contact" },
+  { id: 6, name: "Resume", link: "https://drive.google.com/file/d/1vVGsqjf1cxDpvqXus1aMAor6JglDKYCS/view?usp=sharing" }, // Updated to Google Drive link
 ];
 
 const DropdownLinks = [
@@ -24,7 +25,7 @@ const Navbar = () => {
         </div>
 
         {/* Links and Contact Us button */}
-        <div >
+        <div>
           <ul className="hidden md:flex items-center text-white gap-3 md:gap-4">
             {/* First half of the menu */}
             {Menu.slice(0, 2).map((data) => (
