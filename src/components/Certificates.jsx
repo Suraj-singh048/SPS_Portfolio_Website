@@ -82,12 +82,11 @@ function CertificateCard({ certificate }) {
           <li key={index}>{skill}</li>
         ))}
       </ul>
-      {/* Removed the "View Certification" button */}
     </div>
   );
 }
 
-// Scrollable category container
+// Scrollable category container for certificates
 function CertificateCategory({ id, title, certificates }) {
   const scrollRef = useRef(null);
   const [showArrows, setShowArrows] = useState(false);
@@ -100,9 +99,9 @@ function CertificateCategory({ id, title, certificates }) {
     };
 
     checkOverflow();
-    window.addEventListener("resize", checkOverflow);
+    window.addEventListener("resize", checkOverflow); // Check on resize
 
-    return () => window.removeEventListener("resize", checkOverflow);
+    return () => window.removeEventListener("resize", checkOverflow); // Cleanup on unmount
   }, [certificates]);
 
   const scroll = (direction) => {
@@ -116,6 +115,7 @@ function CertificateCategory({ id, title, certificates }) {
   return (
     <section id={id} className="relative w-full mb-16 p-8 bg-timber-green-100 bg-opacity-90 rounded-lg shadow-xl">
       <h2 className="text-3xl font-semibold text-timber-green-900 mb-6">{title}</h2>
+
       {/* Left Arrow */}
       {showArrows && (
         <button
@@ -126,6 +126,7 @@ function CertificateCategory({ id, title, certificates }) {
           <FaArrowLeft />
         </button>
       )}
+
       {/* Right Arrow */}
       {showArrows && (
         <button
@@ -136,10 +137,12 @@ function CertificateCategory({ id, title, certificates }) {
           <FaArrowRight />
         </button>
       )}
+
       {/* Scrollable container */}
       <div
         ref={scrollRef}
         className="flex overflow-x-auto space-x-8 pb-4 hide-scrollbar"
+        style={{ scrollbarWidth: "none" }}
       >
         {certificates.map((certificate, index) => (
           <CertificateCard certificate={certificate} key={index} />
