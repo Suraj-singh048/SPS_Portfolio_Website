@@ -6,9 +6,9 @@ const experienceData = [
     "company": "Uolo",
     "duration": "December 2024 – Ongoing",
     "responsibilities": [
-      "Onboarding and familiarization with Uolo's data analytics processes and tools.",
-      "Assisting in the initial stages of data collection and preparation for analytical tasks.",
-      "Building foundational knowledge of Uolo's scholastic programs and analytics workflows."
+      "Built a chatbot for Uolos EdTech platform, reducing manual support inquiries by 30%",
+      "Streamlined the data pipeline for chatbot analytics, cutting data processing time by 40%",
+      "Automated repetitive data analysis tasks, freeing team bandwidth for strategic initiatives."
     ]
   },
   
