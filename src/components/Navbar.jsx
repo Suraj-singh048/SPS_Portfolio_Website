@@ -6,7 +6,7 @@ const Menu = [
   { id: 3, name: "Skills", link: "/#skills" },
   { id: 4, name: "About Me", link: "/#about" },
   { id: 5, name: "Contact", link: "/#contact" },
-  { id: 6, name: "Resume", link: "https://drive.google.com/file/d/16VTgd9ahCPdUOIbgs44GCk5MABztGuqI/view" }, // Updated to Google Drive link
+  { id: 6, name: "Resume", link: "https://drive.google.com/file/d/1KnuWnAdK3f3TWk1QLwZF_h72rNBMcyt_/view?usp=sharing" }, // Updated to Google Drive link
 ];
 
 const DropdownLinks = [
